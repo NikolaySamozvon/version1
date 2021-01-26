@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Реєстрація</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="header">
+    <div class="hat">
+        <h1 id="blog">Мій особистий блог</h1>
+        <p id="author">Самозвон Микола</p>
+    </div>
+    <div class="buttons">
+        <a href="login.html" class="button">Увійти</a>
+        <a href="registration.html" class="button">Реєстрація</a>
+    </div>
+</div>
+<hr class="divider">
+<div class="registrationFormSpace">
+    <fieldset class="registrationFormField">
+        <p id="registrationWindowName" align="center">Реєстрація в системі</p>
+        <form id="registration">
+            <p>
+                <label for="surname">Прізвище</label> <br>
+                <input type="text" id="surname" name="surname" style="width: 200px">
+            </p>
+            <p>
+                <label for="name">Ім'я</label> <br>
+                <input type="text" id="name" name="name" style="width: 200px">
+            </p>
+            <p>
+                <label for="loginReg">Логін</label> <br>
+                <input type="text" id="loginReg" name="loginReg" style="width: 200px">
+            </p>
+            <p>
+                <label for="group">Група</label> <br>
+                <select name="group" id="group" style="width: 200px">
+                    <option value="281">281</option>
+                    <option value="282">282</option>
+                </select>
+            </p>
+            <p>
+                <label for="password">Пароль</label> <br>
+                <input type="text" id="password" name="password" style="width: 200px">
+            </p>
+            <p>
+                <label for="passwordConfirm">Підтвердження паролю</label> <br>
+                <input type="text" id="passwordConfirm" name="passwordConfirm" style="width: 200px">
+            </p>
+            <p id="submit">
+                <button class="submiter" type="submit" style="margin-top: 20px; width: 150px">Зареєструватись</button>
+            </p>
+        </form>
+    </fieldset>
+
+</div>
+<footer>
+    <div class="footer">
+        <p id="footerLabel1" align="center">Всі права захищені</p>
+        <p align="center">Розробник: курсант 281 групи Самозвон Микола</p>
+    </div>
+</footer>
+</body>
+</html>
