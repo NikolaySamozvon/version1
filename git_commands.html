@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Команди GIT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="header">
+    <div class="hat">
+        <h1 id="blog">Мій особистий блог</h1>
+        <p id="author">Самозвон Микола</p>
+    </div>
+    <div class="buttons">
+        <a href="login.html" class="button">Увійти</a>
+        <a href="registration.html" class="button">Реєстрація</a>
+    </div>
+</div>
+<hr class="divider">
+<div class="gitCommandsSpace">
+    <div class="block1">
+        <h1 style="color: blue">Create a Repository</h1>
+        <p>From scratch -- Create a new local repository</p>
+        <p style="font-weight: bold">$ git clone my_url<br><br></p>
+        <p>Download from an existing repository</p>
+        <p style="font-weight: bold">$ git clone my_url<br><br></p>
+        <h1 style="color: cornflowerblue">Observe your Repository</h1>
+        <p>List new or modified files not yet committed</p>
+        <p style="font-weight: bold">$ git status <br> <br></p>
+        <p>Show the changes to files not yet staged</p>
+        <p style="font-weight: bold">$ git diff <br> <br></p>
+        <p>Show all staged and unstaged file changes</p>
+        <p style="font-weight: bold">$ git diff HEAD <br> <br></p>
+        <p>Show the changes between two commit ids</p>
+        <p style="font-weight: bold">$ git diff commitl commit2 <br> <br></p>
+        <p>List the change for a commit id and/or file</p>
+        <p style="font-weight: bold">$ git show [commit]:[file] <br> <br></p>
+        <p>Show full change history</p>
+        <p style="font-weight: bold">$ git log <br> <br></p>
+        <p>Show change history for file/directory including diffs</p>
+        <p style="font-weight: bold">$ git log -p [file/directory] <br> <br></p>
+    </div>
+    <div class="block2">
+        <h1 style="color: greenyellow">Working with Branches</h1>
+        <p>List all local branches</p>
+        <p style="font-weight: bold">$ git branch <br> <br></p>
+        <p>List all branches, local and remote</p>
+        <p style="font-weight: bold">$ git branch -av <br> <br></p>
+        <p>Switch to a branch, my_branch and update working directory</p>
+        <p style="font-weight: bold">$ git checkout my_branch <br> <br></p>
+        <p>Create a new branch called new_branch</p>
+        <p style="font-weight: bold">$ git branch new_branch <br> <br></p>
+        <p>Delete the branch called my_branch</p>
+        <p style="font-weight: bold">$ git branch -d my_branch <br> <br></p>
+        <p>Merge branch_a int branch_b</p>
+        <p style="font-weight: bold">$ git checkout branch_b</p>
+        <p style="font-weight: bold">$ git merge branch_a <br> <br></p>
+        <p>Tag the current commit</p>
+        <p style="font-weight: bold">$ git tag my_tag <br> <br></p>
+    </div>
+    <div class="block3">
+        <h1 style="color: green">Make a change</h1>
+        <p>Stages the file ready for commit</p>
+        <p style="font-weight: bold">$ git add [file] <br> <br></p>
+        <p>Stage all changed files ready for commit</p>
+        <p style="font-weight: bold">$ git add <br> <br></p>
+        <p>Commit all staged files to versioned history</p>
+        <p style="font-weight: bold">$ git commit -m "commit message" <br> <br></p>
+        <p>Commit all your tracked files to versioned history</p>
+        <p style="font-weight: bold">$ git commit -am "commit message" <br> <br></p>
+        <p>Unstage file, keeping the file changes</p>
+        <p style="font-weight: bold">$ git reset [file] <br> <br></p>
+        <p>Revert everything to the last commit</p>
+        <p style="font-weight: bold">$ git reset --hard</p>
+    </div>
+    <div class="block4">
+        <h1 style="color: orange">Synchronize</h1>
+        <p>Get the latest changes from origin (no merge)</p>
+        <p style="font-weight: bold">$ git fetch <br> <br></p>
+        <p>Fetch the latest changes from origin and merge</p>
+        <p style="font-weight: bold">$ git pull <br> <br></p>
+        <p>Fetch the latest changes from origin and rebase</p>
+        <p style="font-weight: bold">$ git pull --rebase <br> <br></p>
+        <p>Push local changes to the origin</p>
+        <p style="font-weight: bold">$ git push <br> <br></p>
+        <h1 style="color: orangered">Finally!</h1>
+        <p>When in doubt, use git help</p>
+        <p style="font-weight: bold">$ git command --help <br> <br></p>
+        <p>Or visit <a href="https://training.github.com/">https://training.github.com/</a> for official GitHub training</p>
+    </div>
+</div>
+<footer>
+    <div class="footer">
+        <p id="footerLabel1" align="center">Всі права захищені</p>
+        <p align="center">Розробник: курсант 281 групи Самозвон Микола</p>
+    </div>
+</footer>
+</body>
+</html>
