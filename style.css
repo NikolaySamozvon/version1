@@ -173,3 +173,9 @@ img {
     display: flex;
     min-height: calc(90vh - 100px);
 }
+.block1 {
+    padding-left: 150px;
+}
+.block2, .block3, .block4 {
+    padding-left: 50px;
+}
